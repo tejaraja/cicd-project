@@ -34,8 +34,14 @@ jobs:
       run: docker push tejaraja/frontend:latest
 
     # Nginx (optional)
+    - name: Debugging - List Files
+      run: |
+      pwd
+      ls -R
     - name: Build Nginx Image
       run: docker build -t tejaraja/nginx:latest ./nginx
 
     - name: Push Nginx Image
       run: docker push tejaraja/nginx:latest
+
+   
