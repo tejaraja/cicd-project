@@ -36,8 +36,8 @@ jobs:
     # Nginx (optional)
     - name: Debugging - List Files
       run: | 
-      pwd
-      ls -R
+          pwd
+          ls -R
     - name: Build Nginx Image
       run: docker build -t tejaraja/nginx:latest ./nginx
 
